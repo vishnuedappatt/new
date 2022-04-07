@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTSTAR Model</title>
+    <link rel="stylesheet" href="hotstar.css" type="text/css">
+ 
+    
+</head>
+<body>
+    <div>
+         <div class="navbar">
+         
+            <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                  <a href="#">Channels</a>
+                  <a href="#">Languages</a>
+                  <a href="#">Generes</a>
+                </div>
+                
+            </div>
+          
+            <div >
+                <img class="nav_logo" src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg" alt="">
+            </div>
+               <div >
+                <ul class="Tv">
+                    <div class="dropdown">
+                        <button class="dropbtn">Tv</button>
+                        <div class="dropdown-content">
+                          <a href="#">Channels</a>
+                          <a href="#">Languages</a>
+                          <a href="#">Generes</a>
+                        </div>
+                        
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn" id="mv-sift">Movies</button>
+                        <div class="dropdown-content">
+                          <a href="#">Channels</a>
+                          <a href="#">Languages</a>
+                          <a href="#">Generes</a>
+                        </div>
+                        
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Sports</button>
+                        <div class="dropdown-content">
+                          <a href="#">Channels</a>
+                          <a href="#">Languages</a>
+                          <a href="#">Generes</a>
+                        </div>
+                        
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Disney+</button>
+                        <div class="dropdown-content">
+                          <a href="#">Channels</a>
+                          <a href="#">Languages</a>
+                          <a href="#">Generes</a>
+                        </div>
+                        
+                    </div>
+                  
+                  </ul>
+               </div>
+            <div class="kids">
+                <h3>KiDS</h3>
+            </div>
+            <div class="search" >
+              <input id="serchbar"  type="text" placeholder="Search">
+              <img style="margin-left: -32px;" height="20px" width="20px" src="data:image/png;base64,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" alt="">
+              <button id="upbttn">UPGRADE</button>
+              <div class="avator">
+                <img  src="https://www.hotstar.com/assets/c724e71754181298e3f835e46ade0517.svg" alt="">
+              </div>
+             
+            </div>
+         </div>
+      
+      <div class="main_body">
+          <img class="banner" src="images/Screenshot (179).png" alt="">
+          <div class="continue">
+            <h3>Continue Watching</h3>
+          </div>
+          <div class="cont-tile">
+            <img class="tiles-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/2954/1162954-h-5f76557d619b" alt="">
+            <img  class="tiles-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/1743/1041743-h-663df12087d4" alt="" >
+            <img class="tiles-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4652/674652-h" alt="">
+            <img class="tiles-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4619/674619-h" alt="">
+            <img class="tiles-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4752/184752-h" alt="">
+            <img class="tiles-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/old_images/MOVIE/3257/1770003257/1770003257-h" alt="">
+            <img class="tiles-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/1819/911819-h" alt="">
+            <div class="continue">
+              <h3>Action Movies</h3>
+            </div>
+          </div>
+          <div class="movies">
+            
+            <img class="movie-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7613/177613-v" alt="">
+            <img class="movie-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/5514/675514-v" alt="">
+            <img class="movie-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7117/517117-v" alt="">
+            <img class="movie-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/5181/875181-v" alt="">
+            <img class="movie-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/1213/871213-v" alt="">
+            <img class="movie-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/old_images/vertical/MOVIE/445/1770000445/1770000445-v" alt="">
+            <img class="movie-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7413/297413-v" alt="">
+            <img class="movie-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/5559/675559-v" alt="">
+            <img class="movie-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7545/177545-v" alt="">
+            <div class="continue">
+              <h3>Latest & Trending</h3>
+            </div>
+            <div class="trend">
+              <img class="trend-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/1608/1161608-v-8fdb21cf9c1c" alt="">
+              <img class="trend-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/610/1160610-v-7ea34ec67657" alt="">
+              <img class="trend-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/1516/1161516-v-1a7045b2857d" alt="">
+              <img class="trend-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/5466/1115466-v-6c7716c884a1" alt="">
+              <img class="trend-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/1549/1101549-v-9b1d9e6ffc1b" alt="">
+              <img class="trend-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7517/1097517-v-6eb5ec07c99b" alt="">
+              <img class="trend-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/3868/1093868-v-6e93d9e6f6b8" alt="">
+              <img class="trend-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/9145/1119145-v-3f05b9dced09" alt="">
+              <img class="trend-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/4904/1104904-v-e62be2d3581c" alt="">
+              <div class="continue">
+                <h3>Best in Sports</h3>
+              </div>
+              <div class="sports">
+                <img class="sports-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/1463/1171463-h-2b9cd83fa0fe" alt="">
+                <img class="sports-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/8402/1168402-h-7c5cfe9b6f5f" alt="">
+                <img class="sports-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/818/1170818-h-bcefb93a9868" alt="">
+                <img class="sports-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/840/1170840-h-85277a431286" alt="">
+                <img class="sports-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/787/1170787-h-a4274863988f" alt="">
+                <img class="sports-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/246/1170246-h-ec8928320302" alt="">
+                <img class="sports-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/706/1170706-h-9885d867df76" alt="">
+                <img class="sports-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/8374/1168374-h-d8fedf9b7120" alt="">
+                <div class="continue">
+                  <h3>Popular Channels</h3>
+                </div>
+                <div class="chan">
+                  <img class="chan-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/1132/661132-h" alt="">
+                  <img class="chan-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/1137/661137-h" alt="">
+                  <img class="chan-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/1119/661119-h" alt="">
+                  <img class="chan-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/1138/661138-h" alt="">
+                  <img class="chan-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/1116/661116-h" alt="">
+                  <img class="chan-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/1105/661105-h" alt="">
+                  <img class="chan-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/6970/956970-h" alt="">
+                  <img class="chan-A" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/1167/661167-h" alt="">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+      </div>
+
+      <footer class="foot">
+        <div class="row-1">
+          <ul class="row-ul">
+            <li><a class="style-A" href="#home">About Disney+ Hotstar</a></li>
+            <li class="row-li"><a class="style-A"  href="#news">Terms Of Use</a></li>
+            <li  class="row-li"><a class="style-A" href="#contact">Privacy Policy</a></li>
+            <li  class="row-li"><a class="style-A" href="#about">FAQ</a></li>
+            <li  class="row-li"><a class="style-A" href="#about">Feedback</a></li>
+            <li  class="row-li"><a class="style-A" href="#about">Careers</a></li>
+          </ul>
+          <p class="style-A1">© 2022 STAR. All Rights Reserved. HBO, Home Box Office and all related channel and programming logos are service marks of, and all related</p>
+          <br>
+          <p class="style-A1" id="a2">programming visuals and elements are the property of, Home Box Office, Inc. All rights reserved.</p>
+         
+       
+        </div>
+        <div class="row-2">
+          <p class="style-A1" id="a3">Contact with us</p>
+          <img style="height: 46px;" src="images/fb logo.png" alt="">
+          <img style="height: 46px;" src="images/twitter logo.png" alt="">
+          <p class="style-A1" id="a4">Disney+ Hotstar App</p>
+          <img style=" height: 44px; margin-left: 555px;" src="images/gplay.png" alt="">
+          <img style="    height: 43px;
+          /* margin-left: 555px; */
+          margin-top: -25px;
+          padding-top: -49px;
+          margin-left: 2px;" src="images/appstore.png" alt="">
+        </div>
+
+      </footer>
+   
+</body>
+</html>
